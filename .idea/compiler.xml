@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="PP3_1_1" options="-parameters --add-modules java.base" />
+      <module name="PP3_1_1" options="-parameters --add-modules java.base,java.sql" />
     </option>
   </component>
 </project>

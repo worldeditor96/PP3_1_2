@@ -30,6 +30,7 @@ public class AdminController {
         model.addAttribute("people", userService.index());
         User user = (User) authentication.getPrincipal();
         model.addAttribute("user", user);
+        model.addAttribute("roles", roleService.getAllRoles());
         return "admin/index";
     }
 
