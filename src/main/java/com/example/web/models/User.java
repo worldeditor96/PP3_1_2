@@ -25,8 +25,8 @@ public class User implements UserDetails {
     @Column(name = "lastName")
     private String lastName;
 
-//    @Column(name = "age")
-//    private int age;
+    @Column(name = "age")
+    private int age;
 
     @Column(name = "password")
     private String password;
@@ -56,22 +56,22 @@ public class User implements UserDetails {
     }
 
 
-//    public User(int id, String usernamename, String lastName, int age, String password){
-//        this.id = id;
-//        this.username = usernamename;
-//        this.lastName = lastName;
-//        this.age = age;
-//        this.password = password;
-//    }
-//
-//    public User(int id, String username, String lastName, int age, String password, Set<Role> roles){
-//        this.id = id;
-//        this.username = username;
-//        this.lastName = lastName;
-//        this.age = age;
-//        this.password = password;
-//        this.roles = roles;
-//    }
+    public User(int id, String usernamename, String lastName, int age, String password){
+        this.id = id;
+        this.username = usernamename;
+        this.lastName = lastName;
+        this.age = age;
+        this.password = password;
+    }
+
+    public User(int id, String username, String lastName, int age, String password, Set<Role> roles){
+        this.id = id;
+        this.username = username;
+        this.lastName = lastName;
+        this.age = age;
+        this.password = password;
+        this.roles = roles;
+    }
 
     public int getId() {
         return id;
@@ -97,13 +97,13 @@ public class User implements UserDetails {
         this.lastName = lastName;
     }
 
-//    public int getAge() {
-//        return age;
-//    }
-//
-//    public void setAge(int age) {
-//        this.age = age;
-//    }
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public String getPassword() {
         return password;
@@ -152,7 +152,7 @@ public class User implements UserDetails {
                 "id=" + id +
                 ", name='" + username + '\'' +
                 ", lastName='" + lastName + '\'' +
-                //", age='" + age + '\'' +
+                ", age='" + age + '\'' +
                 ", password=" + password +
                 ", roles=" + roles +
                 '}';
