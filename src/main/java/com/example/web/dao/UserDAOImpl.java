@@ -65,4 +65,9 @@ public class UserDAOImpl implements UserDAO {
                 .setParameter("username", username).getSingleResult();
     }
 
+    @Override
+    public void addUser(User user) {
+        entityManager.persist(user);
+    }
+
 }

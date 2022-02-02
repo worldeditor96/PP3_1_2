@@ -48,4 +48,10 @@ public class UserServiceImpl implements UserService {
         userDAO.delete(id);
     }
 
+    @Override
+    public void addUser(User user) {
+        user.setPassword(bCryptPasswordEncoder().encode(user.getPassword()));
+        userDAO.addUser(user);
+    }
+
 }
