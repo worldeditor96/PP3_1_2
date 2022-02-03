@@ -28,6 +28,7 @@ public class InitData {
         roleService.saveRole(new Role("ROLE_ADMIN"));
         roleService.saveRole(new Role("ROLE_USER"));
 
+        //На слаке посоветовали чтобы роли не дублировались загружать роли по имени из репозитория, из них делал новый set и в юзера засовывал
         Set<Role> rolesAdmin = new HashSet<>();
         rolesAdmin.add(roleService.getRoleByName("ROLE_USER"));
         rolesAdmin.add(roleService.getRoleByName("ROLE_ADMIN"));
@@ -39,6 +40,7 @@ public class InitData {
         admin.setRoles(rolesAdmin);
         userService.addUser(admin);
 
+        //На слаке посоветовали чтобы роли не дублировались загружать роли по имени из репозитория, из них делал новый set и в юзера засовывал
         Set<Role> rolesUser = new HashSet<>();
         rolesUser.add(roleService.getRoleByName("ROLE_USER"));
         User user = new User();
@@ -49,6 +51,7 @@ public class InitData {
         user.setRoles(rolesUser);
         userService.addUser(user);
 
+        //На слаке посоветовали чтобы роли не дублировались загружать роли по имени из репозитория, из них делал новый set и в юзера засовывал
         Set<Role> roles1 = new HashSet<>();
         roles1.add(roleService.getRoleByName("ROLE_USER"));
         roles1.add(roleService.getRoleByName("ROLE_ADMIN"));
