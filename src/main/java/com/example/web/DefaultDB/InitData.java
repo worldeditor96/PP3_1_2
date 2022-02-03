@@ -31,7 +31,6 @@ public class InitData {
         Set<Role> rolesAdmin = new HashSet<>();
         rolesAdmin.add(roleService.getRoleByName("ROLE_USER"));
         rolesAdmin.add(roleService.getRoleByName("ROLE_ADMIN"));
-
         User admin = new User();
         admin.setUsername("admin");
         admin.setLastName("admin");
@@ -42,7 +41,6 @@ public class InitData {
 
         Set<Role> rolesUser = new HashSet<>();
         rolesUser.add(roleService.getRoleByName("ROLE_USER"));
-
         User user = new User();
         user.setUsername("user");
         user.setPassword("user");
@@ -54,7 +52,6 @@ public class InitData {
         Set<Role> roles1 = new HashSet<>();
         roles1.add(roleService.getRoleByName("ROLE_USER"));
         roles1.add(roleService.getRoleByName("ROLE_ADMIN"));
-
         User number1 = new User();
         number1.setUsername("1");
         number1.setPassword("1");
@@ -66,7 +63,6 @@ public class InitData {
 
         Set<Role> roles2 = new HashSet<>();
         roles2.add(roleService.getRoleByName("ROLE_USER"));
-
         User number2 = new User();
         number2.setUsername("2");
         number2.setPassword("2");
